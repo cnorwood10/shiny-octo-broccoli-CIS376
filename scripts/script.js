@@ -1,6 +1,5 @@
 $(function () {
   
-    let userData = ["placeholder", "other"];
     let userJSON = {
       email: "email address",
     };
