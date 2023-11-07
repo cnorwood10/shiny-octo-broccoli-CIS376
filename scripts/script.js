@@ -3,14 +3,8 @@ $(function () {
     let userJSON = {
       email: "email address",
     };
-  
-    $("#loadData").click(() => {
-      console.log("in button click event");
-  
-      $("#email").val(userJSON.email);
-    });
-    
-    $("formSample").click(function () {
+
+    $("#formSample").click(function () {
     console.log("button clicked: ");
     let url = "https://github.com/cnorwood10/shiny-octo-broccoli-india-CIS376/blob/main/assets/data.json";
     $.ajax({
@@ -54,10 +48,9 @@ $(function () {
 
   //Submit
 $("#submission").on("click", (e) => {
-  e.preventDefault();
+    e.preventDefault();
   console.log("clicked the button");
   $("#result").html("<p>The button is pressed and form is submitted.</p>");
-  
   // Submit the form
   $("form").submit();
 });
@@ -96,11 +89,15 @@ $("#submission").on("click", (e) => {
   function getWords(letter) {
   console.log("in f/n getWords, here the paramter: ", letter);
   
-  let wordArray = ["Select your Drink!", "Water", "Coke", "Diet Coke", "Sundrop"];
+  let wordArrayA = ["Select your Drink!", "Water", "Coke", "Diet Coke", "Sundrop"];
+  let wordArrayB = ["Select your Drink!", "Sundrop", "Water", "Sweet Tea"];
   
   
   if (letter === "A") {
-    return wordArray;
+    return wordArrayA;
+  } 
+ if (letter === "B") {
+    return wordArrayB;
   } else {
     return ["Please select a letter!"];
   }
