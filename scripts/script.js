@@ -11,7 +11,7 @@ $(function () {
       $("#email").val(userJSON.email);
     });
     
-    $("#formLoad").click(function () {
+    $("formSample").click(function () {
     console.log("button clicked: ");
     let url = "https://github.com/cnorwood10/shiny-octo-broccoli-india-CIS376/blob/main/assets/data.json";
     $.ajax({
@@ -54,10 +54,10 @@ $(function () {
   });
 
   //Submit
-$("#formSubmit").on("click", (e) => {
+$("#submission").on("click", (e) => {
   e.preventDefault();
   console.log("clicked the button");
-  $("#result").html("<b>The button is pressed and form is submitted.</b>");
+  $("#result").html("<p>The button is pressed and form is submitted.</p>");
   
   // Submit the form
   $("form").submit();
@@ -108,7 +108,6 @@ $("#formSubmit").on("click", (e) => {
   
   }
 
-  
   // Refreshes Page to Restart the Selections
   function refreshPage(){
     $("#row").html("");

@@ -8,15 +8,16 @@ body{
 
 h1{
     font-family: 'Playpen Sans', cursive;
+    text-align: center;
 }
 h4{
     font-family: 'Lora', serif;
 }
 
-#name{
-    color: whitesmoke;
+.meal{
+    text-align: center;
 }
 
-#formSubmit{
-    text-align: center;
+#name{
+    color: whitesmoke;
 }

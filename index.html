@@ -39,13 +39,11 @@
     </div>
   </nav>
 </div>
-
+<br>
   <!-- Title bar -->
 <div class="row">
   <div id="titleBar" class="col-md-8 offset-md-2">
     <h1 id="name" class="text-center">The Best Restuarant in Town</h1>
-    <div style="text-align: center;">
-    </div>
   </div>
 </div>
 
@@ -55,7 +53,7 @@
     <div class="col-md-6 offset-md-3 card mt-3">
   
       <h1 class="card-title">Choose your meal</h1>
-      <h4>Add your information below to save your meal!</h4>
+      <h4 class="meal">Add your information below to save your meal!</h4>
       <form>
   
       <!-- Email and Password -->
@@ -81,7 +79,7 @@
       <!-- Enter Your Pickup Time -->
       <div class="time">
         <label>Select a time to pick up the meal:</label>
-        <input type="time" id="pickTime" name="pickUp" required>
+        <input type="time" id="pickTime" name="pickUp">
       </div>
 
       <br>
@@ -160,9 +158,10 @@
       <br>
   
     <!-- Submit -->
-        <button id="formSubmit" type="submit" class="btn btn-outline-primary">Submit</button>
+        <button id="formSubmit" type="submit" class="btn btn-outline-primary" onClick="sumbission()">Submit</button>
+        <button id="formSample" type="sample" class="btn btn-outline-info" onClick="loadData()">View Sample</button>
         <button id="resetForm" class="btn btn-outline-danger" onClick="refreshPage();">Reset Form</button>
-        <button id="sample" class="btn btn-outline-info">View Sample</button>
+        
 
   </form>
   
