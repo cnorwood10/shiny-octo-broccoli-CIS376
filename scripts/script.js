@@ -52,6 +52,7 @@ $(function () {
     let button = document.getElementById('formSubmit');
 
     function handleButtonClick(event) {
+        event.preventDefault();
      console.log("clicked the button");
      $("#result").html("<p>Thank you for your submission!</p>");
     }
