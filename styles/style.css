@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playpen+Sans&display=swap');
+
+body{
+    background: #0600aa;
+    background-image: url("zenbg-1.png"), url("zenbg-2.png");
+    background-repeat: repeat-x, repeat;
+}
+
+h1{
+    font-family: 'Playpen Sans', cursive;
+}
+h4{
+    font-family: 'Lora', serif;
+}
+
+#name{
+    color: whitesmoke;
+}
