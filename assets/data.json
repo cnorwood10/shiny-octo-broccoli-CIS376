@@ -1,6 +1,10 @@
 {
     "email": "randomemail@una.edu",
     "pwd": "p@ssw0rd",
-    "formcheck": "true"
-    
+    "formcheck": "true",
+    "pickTime": "12:00",
+    "radio": "A",
+    "check": "1",
+    "letterWordsSelect": "None"
+
 }
